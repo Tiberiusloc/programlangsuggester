@@ -22,14 +22,9 @@
     </select>
     </label>
 
-  <p>How familiar are you with coding?</p>
+  <p>On a scale from 1-10 how familiar are you with coding?</p>
     <label for="questionTwo">
-    <select id="questionTwo">
-      <option>Not Familiar</option>
-      <option>Kinda Familiar</option>
-      <option>Really Familiar</option>
-      <option>Legend</option>
-    </select>
+      <input id="questionTwo" type="number"></input>
     </label>
 
   <p>Why do you want to learn to code?</p>
@@ -54,13 +49,8 @@
 
 
     <p>How many siblings do you have?</p>
-      <select id="questionFive">
-        <option>None</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>More than 3</option>
-      </select>
+      <label for="questionFive"></label>
+      <input id="questionFive" type="number">
       <br>
       <br>
       <button type="submit">Choose your language!</button>
@@ -68,7 +58,7 @@
 <div id="outcome" class="hidden">
   <h1>Thank you <span id="name1a">_</span> for filling out our questionaire.</h1>
   <p>Just to double check! Your answer to question one was "<strong><span id="question1a">_</span></strong>", your answer to question two was "<strong><span id="question2a">_</span></strong>", your answer to question three was "<strong><span id="question3a">_</span></strong>", your answer to question four was "<strong><span id="question4a">_</span></strong>"
-  and lastly your answer to question five was "<strong><span id="question5a">_</span></strong>"". 
+  and lastly your answer to question five was "<strong><span id="question5a">_</span></strong>". 
   <br>
   <br>
   <strong id="incorrect">If these are not the correct answers to your question please click this button to reset the form!</strong>
