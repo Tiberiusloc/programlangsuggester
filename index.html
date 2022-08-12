@@ -16,7 +16,7 @@
 
     <select id="questionOne">
       <option>None</option>
-      <option>As much as he could</option>
+      <option>As much as they could</option>
       <option>What is a woodchuck lol</option>
       <option>I don't care about this</option>    
     </select>
@@ -24,49 +24,77 @@
   <p>How familiar are you with coding?</p>
 
     <label>
-      <input type="radio" name="question" value="None">
+      <input type="radio" name="questionTwo" value="None">
       None
     </label>
     <label>
-      <input type="radio" name="question" value="Somewhat Familiar">
+      <input type="radio" name="questionTwo" value="Somewhat Familiar">
       Somewhat Familiar
     </label>
     <label>
-      <input type="radio" name="question" value="Understand some languages">
+      <input type="radio" name="questionTwo" value="Understand some languages">
       Understand Some Languages
     </label>
     <label>
-      <input type="radio" name="question" value="Coding Legend">
+      <input type="radio" name="questionTwo" value="Coding Legend">
       Coding Legend
     </label>
 
   <p>Why do you want to learn to code?</p>
     <label>
-      <input type="radio" name="questionTwo" value="Be a professional coder">
+      <input type="radio" name="questionThree" value="Be a professional coder">
+      Be a professional coder
     </label>
     <label>
-      <input type="radio" name="questionTwo" value="Run a startup">
+      <input type="radio" name="questionThree" value="Run a startup">
+      Run a start up
     </label>
     <label>
-      <input type="radio" name="questionTwo" value="Build something fun">
+      <input type="radio" name="questionThree" value="Build something fun">
+      Build something Fun
     </label>
     <label>
-      <input type="radio" name="questionTwo" value="Have another skill">
+      <input type="radio" name="questionThree" value="Have another skill">
+      Have another skill
     </label>
 
   <p>What will you mainly want to be focused on with coding?</p>
     <label>
-      <input type="radio" name="questionThree" value="Web">
+      <input type="radio" name="questionFour" value="Web">
+      Web
     </label>
     <label>
-      <input type="radio" name="questionThree" value="Mobile">
+      <input type="radio" name="questionFour" value="Mobile">
+      Mobile
     </label>
     <label>
-      <input type="radio" name="questionThree" value="Game">
+      <input type="radio" name="questionFour" value="Gaming">
+      Gaming
     </label>
-  
-  </form>
 
+    <p>How many siblings do you have?</p>
+      <select id="qustionFive">
+        <option>None</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>More than 3</option>
+      </select>
+      <br>
+      <br>
+      <button type="submit">Choose your language!</button>
+  </form>
+<div id="outcome" class="hidden">
+  <h1>Thank you <span id="nameInput">_</span> for filling out our questionaire.</h1>
+  <p>Just to double check! Your answer to question one was<span id="questionOne">_</span>, your answer to question two was<span id="questionTwo">_</span>, your answer to question three was <span id="questionThree">_</span>, your answer to question four was <span id="questionFour">_</span>
+  and lastly your answer to question five was <span id="questionFive">_</span>. 
+  <br>
+  <br>
+  <strong id="incorrect">If these are not the correct answers to your question please click this button to reset the form!</strong>
+  <button type="button">reset</button>
+</p>
+  
+</div>
 
 
 </body>
