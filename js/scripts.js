@@ -4,10 +4,13 @@ window.addEventListener("load", function() {
   let form = document.getElementById("formOne");
   let resetBtn = document.getElementById("reset");
   let outcome = document.getElementById("outcome");
+  let program = document.getElementById("program");
   let cSharp = document.getElementById("cSharp");
   let java = document.getElementById("java");
   let ruby = document.getElementById("ruby");
-   
+
+  console.log ("finished variables")
+
 form.addEventListener("submit", function(event) {
   
   
@@ -26,15 +29,24 @@ form.addEventListener("submit", function(event) {
   document.querySelector("span#question5a").innerText = questionFive;
 
   outcome.removeAttribute("class");
+
+  
   
   event.preventDefault();
-
-  if (questionTwo >= 7 && questionFive >= 3 ) {
+  console.log("finished function")
+  
+  if (questionTwo >= 7) {
     cSharp.removeAttribute("class");
-  } else if (questionTwo >= 4 || questionFive >= 1) {
+    java.setAttribute("class", "hidden");
+    ruby.setAttribute("class", "hidden");
+  } else if (questionTwo >= 4) {
     java.removeAttribute("class");
-  } else if (questionTwo >= 1 || questionFive >= 1) {
+    cSharp.setAttribute("class", "hidden");
+    ruby.setAttribute("class", "hidden");
+  } else if (questionTwo >= 1) {
     ruby.removeAttribute("class");
+    cSharp.setAttribute("class", "hidden");
+    java.setAttribute("class", "hidden");
   }
 
   });
@@ -51,5 +63,6 @@ form.addEventListener("submit", function(event) {
     document.getElementById("questionThree").value = null;
     document.getElementById("questionFour").value = null;
     document.getElementById("questionFive").value = null;
+  
   });
 });
