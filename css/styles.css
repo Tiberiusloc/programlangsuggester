@@ -6,3 +6,7 @@ body {
   text-align: center;
   background-color: grey;
 }
+#error-message {
+  color: red;
+  font-size: 50px;
+} 
