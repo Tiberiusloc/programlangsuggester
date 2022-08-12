@@ -1,4 +1,6 @@
 //Buisness Logic
+
+
 window.onload = function() {
 
 let form = document.getElementById("formOne")
@@ -8,8 +10,9 @@ form.onsubmit = function(event) {
 
   const nameInput = document.getElementById("nameInput").value;
   const questionOne = document.getElementById("questionOne").value;
-  const questionTwo = document.getElementById("questionTwo").Value;
+  const questionTwo = document.querySelector("input[name='questionTwo']:checked").Value;
   const questionThree = document.getElementById("questionThree").Value;
+  console.log ("questiontwo" + questionThree)
   const questionFour = document.getElementById("questionFour").Value;
   const questionFive = document.getElementById("questionFive").Value;
 
