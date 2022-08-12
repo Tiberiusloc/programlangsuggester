@@ -26,11 +26,11 @@ This is a programming language selector based off the values inputted into the t
 ## Setup/Installation Requirements
 
 * Clone this repository to your desktop by using the URL.
-* Open Git bash
-* Change to directory you'd like to work in
-* Use command Git Clone with URL
-* Press Enter to command cloning
-* Open folder where you cloned repository into
+* Open Git bash..
+* Change to directory you'd like to work in.
+* Use command Git Clone with URL.
+* Press Enter to command cloning.
+* Open folder where you cloned repository into.
 * Open index.html in your browser default broswer.
 
 
@@ -43,7 +43,7 @@ This is a programming language selector based off the values inputted into the t
 ## To add:
 
 
-_Error for putting in no answer, other langueages based off inputs, links to sites to get started coding, if running into any problems or have any questions, ideas and or concerns please reach out to me by email at **tlockett680@gmail.com**_
+_Error for putting in no answer, other langueages based off inputs, links to sites to get started coding, if running into any problems or have any questions, ideas and or concerns please reach out to me by email at **tlockett680@gmail.com**_.
 
 
 ## License

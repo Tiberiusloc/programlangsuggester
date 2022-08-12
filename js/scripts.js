@@ -8,6 +8,7 @@ window.addEventListener("load", function() {
   let cSharp = document.getElementById("cSharp");
   let java = document.getElementById("java");
   let ruby = document.getElementById("ruby");
+  let error = document.getElementById("error");
 
   console.log ("finished variables")
 
@@ -39,16 +40,22 @@ form.addEventListener("submit", function(event) {
     cSharp.removeAttribute("class");
     java.setAttribute("class", "hidden");
     ruby.setAttribute("class", "hidden");
+    error.setAttribute("class", "hidden");
   } else if (questionTwo >= 4) {
     java.removeAttribute("class");
     cSharp.setAttribute("class", "hidden");
     ruby.setAttribute("class", "hidden");
+    error.setAttribute("class", "hidden");
   } else if (questionTwo >= 1) {
     ruby.removeAttribute("class");
     cSharp.setAttribute("class", "hidden");
     java.setAttribute("class", "hidden");
+    error.setAttribute("class", "hidden");
+    console.log("branching")
+  } else if (questionTwo > 10) {
+    error.removeAttribute("class")
   }
-
+  console.log("branching still", error.removeAttribute("class"))
   });
 
   form.addEventListener("submit", function() {
