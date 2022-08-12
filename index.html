@@ -23,26 +23,18 @@
     </label>
 
   <p>How familiar are you with coding?</p>
-  <div for="questionTwo" id="questionTwo">
-    <label>
-      <input type="radio" name="questionTwo" value="None" checked>
-      None
-    </label>
-    <label>
-      <input type="radio" name="questionTwo" value="Somewhat Familiar">
-      Somewhat Familiar
-    </label>
-    <label>
-      <input type="radio" name="questionTwo" value="Understand some languages">
-      Understand Some Languages
-    </label>
-    <label>
-      <input type="radio" name="questionTwo" value="Coding Legend">
-      Coding Legend
-    </label>
+  <div id="famcoding">
+    <input type="radio" name="questionTwo" value="None" checked>
+    <label for="none">None</label><br>
+    <input type="radio" name="questionTwo" value="Somewhat Familiar">
+    <label for="familiar">Somewhat Familiar</label><br>
+    <input type="radio" name="questionTwo" value="Understand some languages">
+    <label for="understand">Understand Some Languages</label><br>
+    <input type="radio" name="questionTwo" value="Coding Legend">
+    <label for="legend">Coding Legend</label><br>
   </div>
   <p>Why do you want to learn to code?</p>
-  <div id="questionThree">
+
     <label>
       <input type="radio" name="questionThree" value="Be a professional coder">
       Be a professional coder
@@ -59,10 +51,9 @@
       <input type="radio" name="questionThree" value="Have another skill">
       Have another skill
     </label>
-  </div>
 
   <p>What will you mainly want to be focused on with coding?</p>
-  <div id="questionFour">
+
     <label>
       <input type="radio" name="questionFour" value="Web">
       Web
@@ -75,7 +66,7 @@
       <input type="radio" name="questionFour" value="Gaming">
       Gaming
     </label>
-  </div>
+
     <p>How many siblings do you have?</p>
       <select id="questionFive">
         <option>None</option>

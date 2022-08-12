@@ -10,11 +10,10 @@ form.onsubmit = function(event) {
 
   const nameInput = document.getElementById("nameInput").value;
   const questionOne = document.getElementById("questionOne").value;
-  const questionTwo = document.querySelector("input[name='questionTwo']:checked").Value;
-  const questionThree = document.getElementById("questionThree").Value;
-  console.log ("questiontwo" + questionThree)
-  const questionFour = document.getElementById("questionFour").Value;
-  const questionFive = document.getElementById("questionFive").Value;
+  const questionTwo = document.querySelector("input[name='questionTwo']:checked").value;
+  const questionThree = document.getElementById("questionThree").value; 
+  const questionFour = document.getElementById("questionFour").value;
+  const questionFive = document.getElementById("questionFive").value;
 
   document.querySelector("span#name1a").innerText = nameInput;
   document.querySelector("span#question1a").innerText = questionOne;
