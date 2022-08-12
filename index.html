@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="css/sytles.css" type="text" ref="stylesheet">
+  <link href="css/styles.css" type="text" ref="stylesheet">
   <script src="js/scripts.js"></script>
   <title>Programming Language Suggester</title>
 </head>
@@ -9,7 +9,7 @@
   <h1>Welcome to Coding language suggester!</h1>
   <form id="formOne">
     <label for="nameInput">What is your name?</label>
-    <input id="nameInput" type="text">
+    <input id="nameInput" type="text" name="nameInput">
 
   <p>How much wood could a woodchuck chuck
   If a woodchuck could chuck wood?</p>
@@ -22,7 +22,7 @@
     </select>
 
   <p>How familiar are you with coding?</p>
-
+  <div id="questionTwo">
     <label>
       <input type="radio" name="questionTwo" value="None">
       None
@@ -39,8 +39,9 @@
       <input type="radio" name="questionTwo" value="Coding Legend">
       Coding Legend
     </label>
-
+  </div>
   <p>Why do you want to learn to code?</p>
+  <div id="questionThree">
     <label>
       <input type="radio" name="questionThree" value="Be a professional coder">
       Be a professional coder
@@ -57,8 +58,10 @@
       <input type="radio" name="questionThree" value="Have another skill">
       Have another skill
     </label>
+  </div>
 
   <p>What will you mainly want to be focused on with coding?</p>
+  <div id="questionFour">
     <label>
       <input type="radio" name="questionFour" value="Web">
       Web
@@ -71,9 +74,9 @@
       <input type="radio" name="questionFour" value="Gaming">
       Gaming
     </label>
-
+  </div>
     <p>How many siblings do you have?</p>
-      <select id="qustionFive">
+      <select id="questionFive">
         <option>None</option>
         <option>1</option>
         <option>2</option>
@@ -85,15 +88,14 @@
       <button type="submit">Choose your language!</button>
   </form>
 <div id="outcome" class="hidden">
-  <h1>Thank you <span id="nameInput">_</span> for filling out our questionaire.</h1>
-  <p>Just to double check! Your answer to question one was<span id="questionOne">_</span>, your answer to question two was<span id="questionTwo">_</span>, your answer to question three was <span id="questionThree">_</span>, your answer to question four was <span id="questionFour">_</span>
-  and lastly your answer to question five was <span id="questionFive">_</span>. 
+  <h1>Thank you <span id="name1a">_</span> for filling out our questionaire.</h1>
+  <p>Just to double check! Your answer to question one was<span id="questionOne1a">_</span>, your answer to question two was<span id="questionTwo2a">_</span>, your answer to question three was <span id="questionThree3a">_</span>, your answer to question four was <span id="questionFour4a">_</span>
+  and lastly your answer to question five was <span id="questionFive5a">_</span>. 
   <br>
   <br>
   <strong id="incorrect">If these are not the correct answers to your question please click this button to reset the form!</strong>
   <button type="button">reset</button>
-</p>
-  
+  </p> 
 </div>
 
 
