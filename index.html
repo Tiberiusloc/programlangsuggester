@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <link href="css/styles.css" type="text" ref="stylesheet">
+  <link rel="stylesheet" text="text/css" href="css/styles.css">
   <script src="js/scripts.js"></script>
   <title>Programming Language Suggester</title>
 </head>
@@ -23,49 +23,35 @@
     </label>
 
   <p>How familiar are you with coding?</p>
-  <div id="famcoding">
-    <input type="radio" name="questionTwo" value="None" checked>
-    <label for="none">None</label><br>
-    <input type="radio" name="questionTwo" value="Somewhat Familiar">
-    <label for="familiar">Somewhat Familiar</label><br>
-    <input type="radio" name="questionTwo" value="Understand some languages">
-    <label for="understand">Understand Some Languages</label><br>
-    <input type="radio" name="questionTwo" value="Coding Legend">
-    <label for="legend">Coding Legend</label><br>
-  </div>
-  <p>Why do you want to learn to code?</p>
+    <label for="questionTwo">
+    <select id="questionTwo">
+      <option>Not Familiar</option>
+      <option>Kinda Familiar</option>
+      <option>Really Familiar</option>
+      <option>Legend</option>
+    </select>
+    </label>
 
-    <label>
-      <input type="radio" name="questionThree" value="Be a professional coder">
-      Be a professional coder
-    </label>
-    <label>
-      <input type="radio" name="questionThree" value="Run a startup">
-      Run a start up
-    </label>
-    <label>
-      <input type="radio" name="questionThree" value="Build something fun">
-      Build something Fun
-    </label>
-    <label>
-      <input type="radio" name="questionThree" value="Have another skill">
-      Have another skill
+  <p>Why do you want to learn to code?</p>
+    <label for="questionThree">
+    <select id="questionThree">
+      <option>Be a professional Coder</option>
+      <option>Start your own site</option>
+      <option>Help others</option>
+      <option>Computers cool</option>
+    </select>
     </label>
 
   <p>What will you mainly want to be focused on with coding?</p>
+    <label for="quesitonFour">
+    <select id="questionFour">
+      <option>Web</option>
+      <option>Mobile</option>
+      <option>Gaming</option>
+      <option>Any</option>
+    </select>
+    </label>
 
-    <label>
-      <input type="radio" name="questionFour" value="Web">
-      Web
-    </label>
-    <label>
-      <input type="radio" name="questionFour" value="Mobile">
-      Mobile
-    </label>
-    <label>
-      <input type="radio" name="questionFour" value="Gaming">
-      Gaming
-    </label>
 
     <p>How many siblings do you have?</p>
       <select id="questionFive">
@@ -81,8 +67,8 @@
   </form>
 <div id="outcome" class="hidden">
   <h1>Thank you <span id="name1a">_</span> for filling out our questionaire.</h1>
-  <p>Just to double check! Your answer to question one was "<span id="question1a">_</span>", your answer to question two was "<span id="question2a">_</span>", your answer to question three was "<span id="question3a">_</span>", your answer to question four was "<span id="question4a">_</span>""
-  and lastly your answer to question five was "<span id="question5a">_</span>. 
+  <p>Just to double check! Your answer to question one was "<strong><span id="question1a">_</span></strong>", your answer to question two was "<strong><span id="question2a">_</span></strong>", your answer to question three was "<strong><span id="question3a">_</span></strong>", your answer to question four was "<strong><span id="question4a">_</span></strong>"
+  and lastly your answer to question five was "<strong><span id="question5a">_</span></strong>"". 
   <br>
   <br>
   <strong id="incorrect">If these are not the correct answers to your question please click this button to reset the form!</strong>
